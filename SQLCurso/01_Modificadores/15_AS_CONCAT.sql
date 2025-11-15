@@ -8,4 +8,7 @@ SELECT nombreColumna1,nombreColumna2 AS nuevoNombre FROM nombreTabla WHERE nombr
 SELECT nombreColumna AS nuevoNombre FROM nombreTabla WHERE nombreColumnaCondicional = 'criterio';
 
 -- Para concatenar columnas: CONCAT
-SELECT FROM nombreTabla
+SELECT CONCAT(nombreColuma1, nombreColumna2) FROM nombreTabla; -- Muestra ambas columnas juntas (sin espacios) bajo el nombre CONCAT(nombreColumna1, nombreColumna2).
+SELECT CONCAT(nombreColuma1, ' ', nombreColumna2) FROM nombreTabla; -- Agrega un espacio.
+SELECT CONCAT('Columna 1: ', nombreColumna1, ' Columna 2: ', nombreColumna2) FROM nombreTabla; -- Agrega títulos dentro de cada celda.
+SELECT CONCAT(nombreColuma1, nombreColumna2) AS nuevoNombre FROM nombreTabla; -- Para elegir el título de la tabla generada.

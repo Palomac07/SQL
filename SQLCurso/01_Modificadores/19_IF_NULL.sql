@@ -1,0 +1,1 @@
+SELECT nombreColumna1, nombreColumna2, IFNULL(nombreColumna3, 0) FROM nombreTabla; -- Si el valor en la columna 3 es nulo, imprime 0 en lugar de null.

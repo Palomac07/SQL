@@ -1,0 +1,13 @@
+-- Hay muchas formas de alterar una tabla: agregar columnas, modificar columnas, eliminar columnas, modificar tipos de datos, etc.
+ALTER TABLE nombreTablaExistente
+ADD nombreColumnaNueva tipoDato (constraint(s)); -- ADD = agregar columna.
+
+ALTER TABLE nombreTablaExistente
+RENAME COLUMN nombreColumnaExistente TO nombreNuevoColumna; -- RENAME COLUMN TO = renombrar columna.
+
+ALTER TABLE nombreTablaExistente
+MODIFY COLUMN nombreColumnaExistente tipoDatoNuevo; -- MODIFY COLUMN = cambiar tipo de dato de la columna (tranquilamente puede ser el mismo tipo de
+-- dato con un límite distinto, por ejemplo VARCHAR(10) a VARCHAR(20)).
+
+ALTER TABLE nombreTablaExistente
+DROP COLUMN nombreColumnaExistente; -- DROP COLUMN = eliminar columna.

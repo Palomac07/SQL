@@ -1,0 +1,1 @@
+DROP DATABASE nombreBaseDeDatos; -- Elimina una base de datos existente.

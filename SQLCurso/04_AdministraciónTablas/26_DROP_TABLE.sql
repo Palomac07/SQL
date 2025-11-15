@@ -1,0 +1,1 @@
+DROP TABLE nombreTablaExistente; -- Elimina completamente la tabla de la base de datos.
