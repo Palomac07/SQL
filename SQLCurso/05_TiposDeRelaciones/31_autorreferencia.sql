@@ -3,8 +3,8 @@
 -- ponerle su propia ID, o null).
 
 CREATE TABLE Empleado (
-    id INT PRIMARY KEY,
+    id INT PRIMARY KEY, -- ID único del empleado.
     nombre VARCHAR(100),
-    jefe_id INT,
-    FOREIGN KEY (jefe_id) REFERENCES Empleado(id)
+    jefe_id INT,        -- ID del jefe de este empleado (un empleado puede tener un sólo jefe, un jefe puede tener muchos empleados).
+    FOREIGN KEY (jefe_id) REFERENCES Empleado(id) -- Clave foránea que apunta a la misma tabla.
 );

@@ -1,5 +1,7 @@
 -- Cuando la clave no se puede usar en funciones agregadas (WHERE no puede). En SQL Server se usa si o sí con GROUP BY.
 -- Se trata de un filtro, pero a diferencia de WHERE, que se filtra antes de agrupar, HAVING filtra después de agrupar.
+-- Se usa con COUNT, SUM, AVG.
+
 -- NOTA: en todos los casos de condicionales donde pongo =, me refiero a cualquier operador de comparación.
 SELECT nombreColumna, COUNT(*) as nuevoNombre FROM nombreTabla GROUP BY nombreColumna HAVING COUNT(*) =  criterio; -- Muestra las filas de
 -- nombreColumna que cumplen el criterio, con el nombre elegido.

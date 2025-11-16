@@ -15,3 +15,9 @@ CREATE TABLE Empleado (
 
 -- El ID de un empleado sólo puede estar relacionado con UN ID de la tabla Departamento, pero un ID de la tabla Departamento puede ser FK de
 -- muchos empleados.
+
+-- Si ya tengo la tabla creada y le quiero agregar la FK:
+  ALTER TABLE Empleado
+  ADD depto_id INT,                                  -- Necesaria la coma, sino se ejecuta tod junto y no llega modificar la tabla.
+  ADD CONSTRAINT fk_empleado_departamento            -- Restricción con el nombre que le asignamos
+  FOREIGN KEY (depto_id) REFERENCES Departamento(id);
