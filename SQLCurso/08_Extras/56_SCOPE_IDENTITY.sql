@@ -1,0 +1,7 @@
+-- Devuelve el último valor IDENTITY insertado en el mismo scope (procedimiento/script).
+-- Sirve para obtener el ID auto-generado después de un INSERT en una tabla con IDENTITY.
+-- Nosotras lo usamos en un SCRIPT:
+-- Es código SQL suelto que se ejecuta directamente
+-- Se ejecuta una vez cuando lo corres
+-- No se guarda en la base de datos
+-- Usa GO para separar lotes

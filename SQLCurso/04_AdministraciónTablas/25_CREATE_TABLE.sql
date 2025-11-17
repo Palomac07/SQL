@@ -16,9 +16,10 @@ CREATE TABLE nombreTablaNueva (
 
 -- RESTRICCIONES:
 -- NOT NULL (el valor no puede ser nulo).
+-- IDENTITY(inicio,incremento) (crea automáticamente un valor único y autoincremental).
 -- UNIQUE (el valor no se puede repetir, se usa para IDs).
 -- PK (clave primaria, identificador principal de la tabla, suele ser el ID. Se usa para establecer relaciones con otras tablas).
--- CHECK(nombreColumna = criterio) (se usa como verificación de que se cumpla algo. No afecta la creación de la tabla pero si futuras insersiones
--- o modificaciones).
+-- (WITH) CHECK(nombreColumna = criterio) (se usa como verificación de que se cumpla algo. No afecta la creación de la tabla pero si futuras insersiones
+-- o modificaciones). La única razón para escribir WITH es mayor claridad en el código.
 -- DEFAULT (si no se agrega ningún valor, tiene uno por defecto). Por ejemplo hora TIME DEFAULT CURRENT_TIME().
 -- AUTO_INCREMENT (cada vez que se crea una nueva fila y no se completa el dato, por ejemplo ID, se usa el último dato de la columna +1).

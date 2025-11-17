@@ -1,0 +1,4 @@
+-- Es el nivel de compatibilidad de una base de datos, que determina qué versión de SQL Server emula en cuantp a características y comportamiento.
+-- Permite mantener una DB con comportamientos de versiones anteriores de SQL Server, incluso si el servidor es más nuevo.
+-- 160 corresponde a SQL Server 2022.
+-- Se puede cambiar en cuañquier momento con ALTER DATABASE.

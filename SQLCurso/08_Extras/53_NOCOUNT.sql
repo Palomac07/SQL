@@ -1,0 +1,6 @@
+-- Controla si SQL Server muestra o no el mensaje de cuántas filas fueron afectadas por una operación.
+-- Cuando ejecutas INSERT, UPDATE, DELETE o SELECT, SQL Server muestra:
+-- (5 rows affected)
+-- Con SET NOCOUNT ON, ese mensaje se oculta.
+-- Sirve para un mejor rendiemiento (menos recursos).
+-- La buena práctica es poner SET NOCOUNT ON al inicio de todos los procedimientos.
